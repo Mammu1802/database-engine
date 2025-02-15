@@ -119,7 +119,7 @@ public class DBAppTest {
 
 		Hashtable<String, String> htblColNameMax = new Hashtable<>();
 		htblColNameMax.put("id", "50");
-		htblColNameMax.put("courseName", "zzzz");
+		htblColNameMax.put("courseName", "kkkk");
 		// When
 		Exception exception = assertThrows(DBAppException.class, () -> {
 			engine.createTable("newTable", "id", htblColNameType, htblColNameMin, htblColNameMax);
